@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simply Resin &amp; Landscaping — Resin Driveways, Patios &amp; Landscaping in Derbyshire</title>
+<meta name="description" content="Swadlincote-based resin specialists covering Derbyshire and the UK. Resin-bound driveways, patios, balconies & pool surrounds, landscaping, fencing and turf. Your Style Your Way. Written quote within 24 hours.">
+<style>
+  :root{
+    --black:#0a0a0c;
+    --black-2:#121215;
+    --black-3:#1a1a1f;
+    --gold:#c9a24b;
+    --gold-light:#ecd191;
+    --gold-dark:#8f7124;
+    --gold-grad:linear-gradient(120deg,#8f7124 0%,#c9a24b 30%,#f3dfa4 50%,#c9a24b 70%,#8f7124 100%);
+    --cream:#f2ecdd;
+    --muted:#a29a87;
+    --line:rgba(201,162,75,.22);
+    --radius:14px;
+    --font:"Avenir Next","Segoe UI",Seravek,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",Arial,sans-serif;
+    --serif:"Didot","Bodoni MT","Bodoni 72",Didot,"Playfair Display","Iowan Old Style",Georgia,serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--font);color:var(--cream);background:var(--black);line-height:1.65}
+  img,video{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  h1,h2,h3{font-family:var(--serif);line-height:1.12;font-weight:600;letter-spacing:.01em}
+  .goldtext{background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .eyebrow{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+  section{padding:88px 0}
+  .btn{display:inline-block;padding:15px 32px;border-radius:999px;font-weight:700;font-size:.98rem;text-decoration:none;border:none;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease;font-family:var(--font);letter-spacing:.02em}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-gold{background:linear-gradient(120deg,#a8842f,#d9b358 45%,#f0d795 55%,#d9b358 65%,#a8842f);color:#17120a;box-shadow:0 8px 26px rgba(201,162,75,.28)}
+  .btn-ghost{background:transparent;color:var(--gold-light);border:1.5px solid var(--line)}
+  .btn-ghost:hover{border-color:var(--gold)}
+  header{position:sticky;top:0;z-index:50;background:rgba(10,10,12,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+  .logo{display:flex;align-items:center;gap:14px;text-decoration:none}
+  .logo .mono{font-family:var(--serif);font-size:2rem;font-weight:700;line-height:1;letter-spacing:-.06em}
+  .logo .name{line-height:1.15}
+  .logo .name .l1{font-family:var(--serif);font-size:1.02rem;font-weight:700;letter-spacing:.06em;color:var(--gold-light)}
+  .logo .name .l2{font-size:.62rem;font-weight:600;letter-spacing:.3em;color:var(--muted);text-transform:uppercase}
+  .nav-links{display:flex;gap:24px;align-items:center;list-style:none}
+  .nav-links a{text-decoration:none;font-size:.92rem;font-weight:600;color:var(--cream);opacity:.8}
+  .nav-links a:hover{color:var(--gold-light);opacity:1}
+  .nav-cta{background:linear-gradient(120deg,#a8842f,#d9b358 50%,#a8842f);color:#17120a !important;padding:10px 20px;border-radius:999px;opacity:1 !important}
+  .nav-phone{font-weight:700;color:var(--gold-light) !important}
+  @media (max-width:860px){.nav-links li:not(.keep){display:none}}
+  .hero{position:relative;overflow:hidden;padding:110px 0 120px;background:
+    radial-gradient(900px 480px at 82% -8%, rgba(201,162,75,.16), transparent 60%),
+    radial-gradient(700px 420px at -8% 108%, rgba(201,162,75,.10), transparent 55%),
+    linear-gradient(165deg,rgba(10,10,12,.93) 0%,rgba(18,18,21,.94) 60%,rgba(23,21,15,.96) 100%),
+    url('https://d8j0ntlcm91z4.cloudfront.net/user_3GPt5hWCzN7NGc061uSMrjL0r7q/hf_20260723_164002_fdc9f485-630a-4f5c-999c-dda601d5c81a_min.webp') center 55%/cover no-repeat #0a0a0c}
+  .hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:56px;align-items:center;position:relative}
+  .hero .tagline{font-size:.85rem;letter-spacing:.34em;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
+  .hero h1{font-size:clamp(2.4rem,4.8vw,3.7rem);margin-bottom:22px}
+  .hero p.lead{font-size:1.12rem;color:#cfc7b4;max-width:33rem;margin-bottom:34px}
+  .hero-ctas{display:flex;gap:16px;flex-wrap:wrap}
+  .hero-trust{display:flex;gap:26px;margin-top:44px;flex-wrap:wrap}
+  .trust-item{display:flex;align-items:center;gap:10px;font-size:.9rem;color:#d8d0bd;font-weight:600}
+  .trust-item .dot{width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px rgba(201,162,75,.8);flex:none}
+  @media (max-width:900px){.hero-grid{grid-template-columns:1fr}.hero{padding:70px 0 90px}}
+  .calc{background:var(--black-3);border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 30px 70px rgba(0,0,0,.6);padding:30px}
+  .calc h3{font-size:1.35rem;margin-bottom:4px}
+  .calc .sub{font-size:.88rem;color:var(--muted);margin-bottom:18px}
+  .field{margin-bottom:14px}
+  .field label{display:block;font-size:.78rem;font-weight:700;margin-bottom:6px;color:var(--gold);letter-spacing:.06em;text-transform:uppercase}
+  .field select,.field input,textarea{width:100%;padding:12px 14px;border:1.5px solid rgba(201,162,75,.3);border-radius:10px;font-size:.98rem;font-family:var(--font);background:#0e0e11;color:var(--cream)}
+  .field select:focus,.field input:focus,textarea:focus{outline:2px solid var(--gold);border-color:var(--gold)}
+  .estimate-result{margin-top:16px;padding:16px;border-radius:10px;background:rgba(201,162,75,.09);border:1px solid var(--line);display:none}
+  .estimate-result.show{display:block;animation:pop .25s ease}
+  @keyframes pop{from{transform:scale(.97);opacity:0}to{transform:scale(1);opacity:1}}
+  .estimate-result .range{font-family:var(--serif);font-size:1.7rem;font-weight:700}
+  .estimate-result .note{font-size:.8rem;color:var(--muted);margin-top:4px}
+  #est-unit{font-weight:700;color:var(--gold-light);margin-top:6px;font-size:.85rem}
+  .strip{background:#0e0d0a;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:24px 0}
+  .strip .wrap{display:flex;gap:18px;justify-content:space-between;flex-wrap:wrap}
+  .strip-item{display:flex;gap:10px;align-items:center;font-size:.93rem;color:#d8d0bd}
+  .strip-item b{color:var(--gold-light)}
+  .strip-item .tick{color:var(--gold);font-weight:700}
+  .services-head{max-width:660px;margin-bottom:48px}
+  .services-head h2{font-size:clamp(1.9rem,3.2vw,2.6rem);margin-bottom:12px}
+  .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+  .svc{background:var(--black-2);border:1px solid var(--line);border-radius:var(--radius);padding:30px;transition:transform .18s ease,border-color .18s ease;position:relative}
+  .svc:hover{transform:translateY(-4px);border-color:rgba(201,162,75,.5)}
+  .svc .flag{position:absolute;top:-11px;right:18px;background:linear-gradient(120deg,#a8842f,#d9b358);color:#17120a;font-size:.66rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:4px 12px;border-radius:999px}
+  .svc h3{font-size:1.22rem;margin-bottom:8px;color:var(--gold-light)}
+  .svc p{font-size:.93rem;color:var(--muted);margin-bottom:14px}
+  .svc .from{font-weight:700;font-size:.88rem;color:var(--gold)}
+  .svc a.quote-link{display:inline-block;margin-top:10px;font-weight:700;font-size:.88rem;color:var(--cream);text-decoration:none;border-bottom:1px solid var(--gold)}
+  .video-sec{background:linear-gradient(165deg,#0e0d0a,#121215)}
+  .video-grid{display:grid;grid-template-columns:1fr auto;gap:64px;align-items:center}
+  .video-grid h2{font-size:clamp(1.9rem,3.2vw,2.5rem);margin-bottom:14px}
+  .video-grid p{color:var(--muted);max-width:30rem;margin-bottom:22px}
+  .phone{width:min(320px,80vw);border-radius:36px;padding:12px;background:#000;border:1.5px solid rgba(201,162,75,.45);box-shadow:0 0 60px rgba(201,162,75,.14),0 40px 80px rgba(0,0,0,.7);justify-self:center}
+  .phone video{border-radius:26px;width:100%}
+  @media (max-width:860px){.video-grid{grid-template-columns:1fr}}
+  .portfolio-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+  .pf{border-radius:var(--radius);overflow:hidden;background:var(--black-2);border:1px solid var(--line)}
+  .pf .ph{height:230px;display:flex;align-items:flex-end;padding:18px;color:#f2ecdd;font-weight:700;font-size:.88rem;position:relative;background-size:cover;background-position:center}
+  .pf .ph::after{content:"📷 " attr(data-note);position:absolute;top:12px;right:12px;left:auto;background:rgba(0,0,0,.55);border:1px solid var(--line);font-size:.66rem;font-weight:600;padding:4px 10px;border-radius:999px;max-width:75%}
+  .pf.hasimg .ph::after{display:none}
+  .pf .body{padding:18px 20px}
+  .pf .body h3{font-size:1.02rem;color:var(--gold-light);margin-bottom:4px}
+  .pf .body p{font-size:.86rem;color:var(--muted)}
+  .g1{background:linear-gradient(150deg,#4d3f22,#221c10)}
+  .g2{background:linear-gradient(150deg,#5a4a28,#17130a)}
+  .g3{background:linear-gradient(150deg,#3d3d42,#151517)}
+  .g4{background:linear-gradient(150deg,#3f4a33,#161a12)}
+  .g5{background:linear-gradient(150deg,#54432c,#1b150d)}
+  .g6{background:linear-gradient(150deg,#46514d,#131715)}
+  .g7{background:linear-gradient(150deg,#514f2c,#17160d)}
+  .g8{background:linear-gradient(150deg,#4a3a3a,#171212)}
+  .why{background:#0e0d0a;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .why h2{font-size:clamp(1.9rem,3.2vw,2.4rem);margin-bottom:12px}
+  .why .lead{color:var(--muted);max-width:40rem;margin-bottom:44px}
+  .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+  .why-card{background:rgba(201,162,75,.05);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+  .why-card .num{font-family:var(--serif);font-size:2rem;font-weight:700;margin-bottom:8px}
+  .why-card h3{font-size:1.02rem;margin-bottom:8px;color:var(--gold-light)}
+  .why-card p{font-size:.88rem;color:var(--muted)}
+  .reviews .stars{color:var(--gold);letter-spacing:3px;font-size:1.1rem}
+  .reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin-top:40px}
+  .review{background:var(--black-2);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+  .review p.quote{font-size:.96rem;margin:12px 0 16px}
+  .review .who{font-weight:700;font-size:.86rem;color:var(--gold-light)}
+  .review .where{font-size:.78rem;color:var(--muted)}
+  .review-note{margin-top:26px;font-size:.84rem;color:var(--muted);border:1.5px dashed var(--line);padding:14px 18px;border-radius:10px}
+  .areas-flex{display:flex;gap:48px;align-items:flex-start;flex-wrap:wrap}
+  .areas-flex > div{flex:1;min-width:280px}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .chip{background:var(--black-2);border:1px solid var(--line);border-radius:999px;padding:8px 18px;font-size:.88rem;font-weight:600;color:#d8d0bd}
+  .contact{background:linear-gradient(165deg,#121215,#0a0a0c);border-top:1px solid var(--line)}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  .contact h2{font-size:clamp(1.9rem,3.2vw,2.4rem);margin-bottom:14px}
+  .contact .lead{color:var(--muted);margin-bottom:28px}
+  .contact-detail{display:flex;gap:12px;align-items:center;margin-bottom:18px;font-weight:600}
+  .contact-detail .ico{color:var(--gold);font-size:1.1rem;width:26px;flex:none}
+  .contact-form{background:var(--black-3);border:1px solid var(--line);border-radius:var(--radius);padding:32px;box-shadow:0 30px 70px rgba(0,0,0,.55)}
+  .contact-form h3{color:var(--gold-light);margin-bottom:6px}
+  .contact-form .sub{font-size:.86rem;color:var(--muted);margin-bottom:20px}
+  .form-msg{display:none;margin-top:14px;padding:14px;border-radius:10px;background:rgba(201,162,75,.1);border:1px solid var(--line);font-weight:600;color:var(--gold-light)}
+  .form-msg.show{display:block;animation:pop .25s ease}
+  textarea{min-height:90px;resize:vertical}
+  @media (max-width:860px){.contact-grid{grid-template-columns:1fr}}
+  footer{background:#070708;color:#7d766a;padding:34px 0;font-size:.84rem;border-top:1px solid var(--line)}
+  footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+  footer a{color:#b8ae97;text-decoration:none}
+  .swap-banner{background:#171307;border-bottom:1px solid var(--line);color:#cdb571;font-size:.84rem;padding:10px 0;text-align:center}
+</style>
+</head>
+<body>
+
+<div class="swap-banner"><b>Draft preview.</b> Real prices &amp; contact details are in — just reviews, the logo file and one photo slot left to drop in.</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">
+      <span class="mono goldtext">SR</span>
+      <span class="name"><span class="l1">SIMPLY RESIN</span><br><span class="l2">&amp; Landscaping</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#watch">Watch</a></li>
+      <li><a href="#work">Our Work</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#areas">Areas</a></li>
+      <li class="keep"><a class="nav-phone" href="tel:+447803098495">07803 098495</a></li>
+      <li class="keep"><a class="nav-cta" href="#quote">Free Quote</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero" id="top" style="padding-top:96px">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="tagline">Your Style &nbsp;·&nbsp; Your Way</div>
+      <h1><span class="goldtext">Resin driveways &amp; gardens</span><br>finished like they should be.</h1>
+      <p class="lead">Simply Resin &amp; Landscaping installs resin-bound driveways, patios and complete garden transformations — based in Swadlincote, working across Derbyshire and UK-wide for the right project. Ballpark price in 30 seconds, written quote within 24 hours.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-gold" href="#quote">Get my free quote</a>
+        <a class="btn btn-ghost" href="#work">See our work</a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-item"><span class="dot"></span>Replies within 1 hour, working days</div>
+        <div class="trust-item"><span class="dot"></span>Written quote in 24 hours</div>
+        <div class="trust-item"><span class="dot"></span>Fixed price — the quote is the bill</div>
+      </div>
+    </div>
+    <div class="calc" id="estimate">
+      <h3 class="goldtext">30-second ballpark price</h3>
+      <p class="sub">No details needed. Not sure of your m²? Pick the option that sounds like your place.</p>
+      <div class="field">
+        <label for="svc">What do you need?</label>
+        <select id="svc" onchange="fillSizes()">
+          <option value="">Choose a service…</option>
+          <option value="resindrive">Resin-bound driveway</option>
+          <option value="resinpatio">Resin patio or path</option>
+          <option value="resinpool">Resin balcony / pool surround</option>
+          <option value="landscaping">Full garden landscaping / redesign</option>
+          <option value="fencing">Fencing &amp; gates</option>
+          <option value="turf">Turfing (real grass)</option>
+          <option value="artificial">Artificial grass</option>
+          <option value="security">Security posts</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="size" id="size-label">Size</label>
+        <select id="size">
+          <option value="">Choose a service first…</option>
+        </select>
+      </div>
+      <button class="btn btn-gold" style="width:100%" onclick="estimate()">Show my ballpark</button>
+      <div class="estimate-result" id="est-out">
+        <div class="range goldtext" id="est-range"></div>
+        <div id="est-unit"></div>
+        <div class="note" id="est-note"></div>
+        <a class="btn btn-ghost" style="width:100%;text-align:center;margin-top:12px;padding:12px" href="#quote">Lock in an exact quote →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <div class="strip-item"><span class="tick">✓</span><span><b>Quote from photos</b> — no visit needed</span></div>
+    <div class="strip-item"><span class="tick">✓</span><span><b>Written quote in 24h</b> — not weeks</span></div>
+    <div class="strip-item"><span class="tick">✓</span><span><b>Photo updates</b> during your project</span></div>
+    <div class="strip-item"><span class="tick">✓</span><span><b>10-year</b> workmanship guarantee</span></div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="services-head">
+      <span class="eyebrow">What we do</span>
+      <h2>One team. <span class="goldtext">Every surface, every garden.</span></h2>
+      <p style="color:var(--muted)">Resin is our name — but we design and build the whole outdoor space around it.</p>
+    </div>
+    <div class="services-grid">
+      <div class="svc"><span class="flag">Our speciality</span>
+        <h3>Resin-Bound Driveways</h3>
+        <p>Seamless, permeable, weed-resistant and SUDS-compliant — laid on a proper base in your choice of stone blend. No planning permission needed.</p>
+        <span class="from">From £90/m² supplied &amp; laid</span><br>
+        <a class="quote-link" href="#quote">Get a driveway quote →</a>
+      </div>
+      <div class="svc">
+        <h3>Resin Patios &amp; Paths</h3>
+        <p>Smooth, barefoot-friendly and frost-proof, with crisp edging and drainage features built in — like the circular drain surrounds we're known for.</p>
+        <span class="from">From £60/m² supplied &amp; laid</span><br>
+        <a class="quote-link" href="#quote">Get a patio quote →</a>
+      </div>
+      <div class="svc">
+        <h3>Resin Balconies &amp; Pool Surrounds</h3>
+        <p>Anti-slip, UV-stable resin for balconies, terraces and pool sides — smooth underfoot, no loose stone, built to handle water.</p>
+        <span class="from">From £100/m² supplied &amp; laid</span><br>
+        <a class="quote-link" href="#quote">Discuss a balcony or pool side →</a>
+      </div>
+      <div class="svc">
+        <h3>Garden Landscaping &amp; Design</h3>
+        <p>Full transformations — porcelain patios, artificial lawns, planting, slatted screens and lighting. New-build gardens a speciality.</p>
+        <span class="from">Projects from £2,500</span><br>
+        <a class="quote-link" href="#quote">Get a landscaping quote →</a>
+      </div>
+      <div class="svc">
+        <h3>Fencing &amp; Gates</h3>
+        <p>Contemporary slatted screens, solid boundary fencing and made-to-measure timber gates — concreted in properly, built to last.</p>
+        <span class="from">From £120 per panel fitted</span><br>
+        <a class="quote-link" href="#quote">Get a fencing quote →</a>
+      </div>
+      <div class="svc">
+        <h3>Turfing &amp; Artificial Lawns</h3>
+        <p>Real turf laid on prepared ground, or premium artificial grass — green all year, zero mowing.</p>
+        <span class="from">Real turf £30–£40/m² · Artificial £50–£70/m²</span><br>
+        <a class="quote-link" href="#quote">Get a lawn quote →</a>
+      </div>
+      <div class="svc">
+        <h3>Security Posts</h3>
+        <p>From basic telescopic parking posts to high-end electric rising security posts — protect the driveway we just made beautiful.</p>
+        <span class="from">From £400 fitted · electric posts up to £3,000</span><br>
+        <a class="quote-link" href="#quote">Get a security quote →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="video-sec" id="watch">
+  <div class="wrap video-grid">
+    <div>
+      <span class="eyebrow">Watch us work</span>
+      <h2>See a <span class="goldtext">Simply Resin</span> job up close.</h2>
+      <p>Straight from site — no filters, no stock footage. This is the finish you get when resin is laid properly on a prepared base.</p>
+      <a class="btn btn-gold" href="#quote">I want mine like this</a>
+    </div>
+    <div class="phone">
+      <video id="sr-video" muted loop playsinline controls preload="none"></video>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <span class="eyebrow">Recent projects</span>
+    <h2 style="font-size:clamp(1.9rem,3.2vw,2.4rem);margin-bottom:40px">Real jobs. <span class="goldtext">Real finishes.</span></h2>
+    <div class="portfolio-grid">
+      <div class="pf hasimg"><div class="ph g1" style="background-image:url('https://d8j0ntlcm91z4.cloudfront.net/user_3GPt5hWCzN7NGc061uSMrjL0r7q/hf_20260723_163956_b61814e2-c6b9-4020-a0b3-9f082ba6f7c2_min.webp')">Resin patio</div><div class="body"><h3>[Town] — golden buff resin patio</h3><p>Seamless resin-bound patio with feature circular drain surround, wrapping the lawn edge.</p></div></div>
+      <div class="pf hasimg"><div class="ph g2" style="background-image:url('https://d8j0ntlcm91z4.cloudfront.net/user_3GPt5hWCzN7NGc061uSMrjL0r7q/hf_20260723_164002_fdc9f485-630a-4f5c-999c-dda601d5c81a_min.webp')">Resin driveway</div><div class="body"><h3>[Town] — driveway with block border</h3><p>Golden gravel blend with contrasting block-paved edge, framed by hardwood gates.</p></div></div>
+      <div class="pf hasimg"><div class="ph g3" style="background-image:url('https://d8j0ntlcm91z4.cloudfront.net/user_3GPt5hWCzN7NGc061uSMrjL0r7q/hf_20260723_164008_4f8b9f5d-3376-424c-b0ed-bf6d07f90748_min.webp')">Resin roof terrace</div><div class="body"><h3>[Town] — flat roof turned terrace</h3><p>Silver resin surfacing over a waterproofed flat roof — now a sun terrace with a view.</p></div></div>
+      <div class="pf hasimg"><div class="ph g4" style="background-image:url('https://d8j0ntlcm91z4.cloudfront.net/user_3GPt5hWCzN7NGc061uSMrjL0r7q/hf_20260723_164014_280e858d-c8b6-4168-b358-fd3187fe2033_min.webp')">New-build garden</div><div class="body"><h3>[Town] — complete new-build transformation</h3><p>Porcelain patio, artificial lawn, stepping stones, raised beds and cedar slatted screens.</p></div></div>
+      <div class="pf"><div class="ph g5" data-note="Drop in: front garden, turf + planting">Front garden</div><div class="body"><h3>[Town] — kerb-appeal front garden</h3><p>Fresh turf, structured planting and stone-dressed borders with a porcelain path.</p></div></div>
+      <div class="pf hasimg"><div class="ph g6" style="background-image:url('https://d8j0ntlcm91z4.cloudfront.net/user_3GPt5hWCzN7NGc061uSMrjL0r7q/hf_20260723_164020_ef537268-f3cd-4adc-be95-17b85a735578_min.webp')">Porcelain patio</div><div class="body"><h3>[Town] — patio &amp; screen combination</h3><p>Large-format porcelain with slatted fencing and festoon lighting for evening use.</p></div></div>
+      <div class="pf hasimg"><div class="ph g7" style="background-image:url('https://d8j0ntlcm91z4.cloudfront.net/user_3GPt5hWCzN7NGc061uSMrjL0r7q/hf_20260723_164026_a76b4aa3-d2b9-45da-903a-d6c8f9e92003_min.webp')">Security post</div><div class="body"><h3>[Town] — telescopic security post</h3><p>Lockable telescopic bollard, core-drilled and set in resin-finished paving.</p></div></div>
+      <div class="pf"><div class="ph g8" data-note="Drop in: your next favourite job">Your project?</div><div class="body"><h3>This space is waiting for your garden</h3><p>Send us photos of your space and we'll tell you what's possible.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <span class="eyebrow">Why Simply Resin</span>
+    <h2>The finish is the difference.<br><span class="goldtext">So is the way we work.</span></h2>
+    <p class="lead">Anyone can pour resin. Laying it properly — right base, right depth, right blend, crisp edges — is what separates a 15-year surface from a 2-year regret.</p>
+    <div class="why-grid">
+      <div class="why-card"><div class="num goldtext">24h</div><h3>Quotes that actually arrive</h3><p>A written, itemised, fixed-price quote within 24 hours — and replies within 1 hour on working days.</p></div>
+      <div class="why-card"><div class="num goldtext">£0</div><h3>Surprises on the final bill</h3><p>The quote is the price. Anything unexpected gets discussed before we spend a penny of your money.</p></div>
+      <div class="why-card"><div class="num goldtext">🎨</div><h3>See it before we build it</h3><p>Every project is planned and designed with you — including AI visual designs of your finished space once we've discussed your ideas.</p></div>
+      <div class="why-card"><div class="num goldtext">10yr</div><h3>Guarantee in writing</h3><p>Workmanship guaranteed for 10 years, in your quote, in writing. If it fails, we come back and fix it.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap" style="text-align:center">
+    <span class="eyebrow">Reviews</span>
+    <h2 style="font-size:clamp(1.9rem,3.2vw,2.4rem)">Rated <span class="goldtext">★ [4.9]</span> by Derbyshire homeowners</h2>
+    <div class="reviews-grid" style="text-align:left">
+      <div class="review"><div class="stars">★★★★★</div><p class="quote">"[Real customer quote — e.g. about the driveway transformation and tidiness.]"</p><div class="who">[Customer name]</div><div class="where">[Town], Derbyshire</div></div>
+      <div class="review"><div class="stars">★★★★★</div><p class="quote">"[Real customer quote — ideally mentioning the fixed price being honoured.]"</p><div class="who">[Customer name]</div><div class="where">[Town], Derbyshire</div></div>
+      <div class="review"><div class="stars">★★★★★</div><p class="quote">"[Real customer quote — ideally from a repeat customer.]"</p><div class="who">[Customer name]</div><div class="where">[Town], Derbyshire</div></div>
+    </div>
+    <div class="review-note">⚠️ Use only genuine reviews and link them to your live Google Business profile — fake reviews break advertising law and Google will delist you.</div>
+  </div>
+</section>
+
+<section id="areas">
+  <div class="wrap areas-flex">
+    <div>
+      <span class="eyebrow">Coverage</span>
+      <h2 style="font-size:clamp(1.9rem,3.2vw,2.4rem);margin-bottom:14px">Based in <span class="goldtext">Swadlincote</span>. Working UK-wide.</h2>
+      <p style="color:var(--muted)">Local work across Derbyshire and the Midlands with no minimum charge within 20 miles of Swadlincote. Further afield? We take on projects across the whole UK when the size is right (£2,000 minimum outside our local patch).</p>
+    </div>
+    <div>
+      <div class="chips">
+        <span class="chip">Derby</span><span class="chip">Chesterfield</span><span class="chip">Belper</span><span class="chip">Matlock</span><span class="chip">Ashbourne</span><span class="chip">Ripley</span><span class="chip">Alfreton</span><span class="chip">Ilkeston</span><span class="chip">Long Eaton</span><span class="chip">Swadlincote</span><span class="chip">Wirksworth</span><span class="chip">Duffield</span><span class="chip" style="border-color:var(--gold);color:var(--gold-light)">+ UK-wide for larger projects</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="quote">
+  <div class="wrap contact-grid">
+    <div>
+      <span class="eyebrow">Free quote</span>
+      <h2>Tell us about your space.<br><span class="goldtext">Hear back today.</span></h2>
+      <p class="lead">Send the form, or text/WhatsApp us measurements and photos of your space — most quotes can be estimated without a visit. We reply within the hour on working days, and your written quote lands within 24 hours.</p>
+      <div class="contact-detail"><span class="ico">☎</span><a href="tel:+447803098495" style="text-decoration:none">07803 098495 <span style="font-weight:400;color:var(--muted)">(calls Mon–Fri 8am–4pm)</span></a></div>
+      <div class="contact-detail"><span class="ico">✉</span><a href="mailto:info@resinandlandscaping.co.uk" style="text-decoration:none">info@resinandlandscaping.co.uk</a></div>
+      <div class="contact-detail"><span class="ico">💬</span><a href="https://wa.me/447803098495" style="text-decoration:none">WhatsApp &amp; text — anytime</a></div>
+      <div class="contact-detail"><span class="ico">📍</span>Swadlincote, Derbyshire — working UK-wide</div>
+      <p style="font-size:.84rem;color:#7d766a;margin-top:24px">Evenings &amp; weekends: text or WhatsApp anytime — we'll reply within the hour next working day.</p>
+    </div>
+    <div class="contact-form">
+      <h3>Get your free quote</h3>
+      <p class="sub">Takes under a minute. No obligation, no pushy follow-up calls.</p>
+      <div class="field"><label for="f-name">Your name</label><input id="f-name" type="text" placeholder="Jane Smith"></div>
+      <div class="field"><label for="f-phone">Phone or email</label><input id="f-phone" type="text" placeholder="07### ###### or you@email.com"></div>
+      <div class="field"><label for="f-town">Your town</label><input id="f-town" type="text" placeholder="e.g. Belper"></div>
+      <div class="field"><label for="f-msg">What do you need? (rough is fine)</label><textarea id="f-msg" placeholder="e.g. Two-car driveway, currently block paving…"></textarea></div>
+      <button class="btn btn-gold" style="width:100%" onclick="sendForm()">Request my free quote</button>
+      <div class="form-msg" id="form-msg">✓ Thanks! We'll be in touch the same working day.<br><span style="font-weight:400;font-size:.78rem">(Demo only — connect this form to your email before going live.)</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 Simply Resin &amp; Landscaping · Est. 2020 · Swadlincote, Derbyshire · <em>Your Style Your Way</em></div>
+    <div>10-year workmanship guarantee · <a href="#top">Back to top ↑</a></div>
+  </div>
+</footer>
+
+<script>
+  var services = {
+    resindrive:{
+      sizeLabel:"Driveway size",
+      note:"Resin-bound, UV-stable, SUDS-permeable, laid on a proper prepared base. No minimum charge within 20 miles of Swadlincote; £2,000 minimum beyond.",
+      perM2:[90,140],
+      sizes:[
+        {label:"1 car — ~15 m²", range:[1400,2500]},
+        {label:"2 cars — ~30 m²", range:[2300,4900]},
+        {label:"3 cars / wide frontage — ~45 m²", range:[3600,7700]},
+        {label:"Long / sweeping drive — 60 m²+", range:[5400,14000]}
+      ]},
+    resinpatio:{
+      sizeLabel:"Patio / path size",
+      note:"Smooth, anti-slip, frost-proof resin with crisp edging. No minimum charge within 20 miles of Swadlincote; £2,000 minimum beyond.",
+      perM2:[60,100],
+      sizes:[
+        {label:"Path or small seating spot — ~12 m²", range:[750,1500]},
+        {label:"Family patio — ~25 m² (6-seater + BBQ)", range:[1300,3000]},
+        {label:"Entertainer — ~40 m² (dining + lounge)", range:[2100,4500]},
+        {label:"Full outdoor room — 60 m²+", range:[3600,9000]}
+      ]},
+    resinpool:{
+      sizeLabel:"Balcony / pool surround size",
+      note:"Anti-slip, UV-stable resin that handles water beautifully — balconies, terraces and pool sides.",
+      perM2:[100,140],
+      sizes:[
+        {label:"Balcony — ~8 m²", range:[800,1400]},
+        {label:"Small pool surround / terrace — ~20 m²", range:[1600,3500]},
+        {label:"Large pool surround — ~40 m²", range:[3500,6300]},
+        {label:"Full pool area — 60 m²+", range:[6000,12600]}
+      ]},
+    landscaping:{
+      sizeLabel:"Garden size (house type is a fine guide)",
+      note:"Full redesign incl. groundwork, materials & labour — planned and designed with you, AI visuals included.",
+      sizes:[
+        {label:"Courtyard / terraced house — up to ~40 m²", range:[2500,7000], area:[25,40]},
+        {label:"Typical semi — ~40–100 m²", range:[7000,15000], area:[40,100]},
+        {label:"Detached house — ~100–250 m²", range:[15000,35000], area:[100,250]},
+        {label:"Big plot / rural — 250 m² and up", range:[35000,60000], area:[250,400]}
+      ]},
+    fencing:{
+      sizeLabel:"How much fencing, roughly?",
+      note:"Supplied & fitted, concrete posts & gravel boards, old fence taken away.",
+      sizes:[
+        {label:"Short run — ~6 panels (≈11 metres)", range:[720,960]},
+        {label:"One side of the garden — ~10 panels (≈18 m)", range:[1200,1600]},
+        {label:"Whole back garden, typical semi — ~16 panels (≈29 m)", range:[1900,2600]},
+        {label:"Full perimeter, detached — 25+ panels (45 m+)", range:[3000,6400]}
+      ]},
+    turf:{
+      sizeLabel:"Lawn area",
+      note:"Real turf laid on properly prepared ground.",
+      perM2:[30,40],
+      sizes:[
+        {label:"Small lawn — up to ~50 m²", range:[900,2000]},
+        {label:"Medium lawn — ~50–120 m²", range:[1500,4800]},
+        {label:"Large lawn — ~120–300 m²", range:[3600,12000]},
+        {label:"Paddock-sized — 300 m²+", range:[9000,20000]}
+      ]},
+    artificial:{
+      sizeLabel:"Lawn area",
+      note:"Premium artificial grass, supplied & laid — green all year, zero mowing.",
+      perM2:[50,70],
+      sizes:[
+        {label:"Small lawn — up to ~50 m²", range:[1500,3500]},
+        {label:"Medium lawn — ~50–120 m²", range:[2500,8400]},
+        {label:"Large lawn — ~120–300 m²", range:[6000,21000]},
+        {label:"Very large — 300 m²+", range:[15000,35000]}
+      ]},
+    security:{
+      sizeLabel:"What kind of post?",
+      note:"Supplied & fitted, keys included, mess taken away.",
+      sizes:[
+        {label:"Basic telescopic post", range:[400,600]},
+        {label:"Heavy-duty / anti-ram post", range:[600,1200]},
+        {label:"Electric rising security post", range:[1500,3000]},
+        {label:"Two or more posts", range:[750,5500]}
+      ]}
+  };
+  function fmt(n){return "£"+n.toLocaleString("en-GB")}
+  function fillSizes(){
+    var s=document.getElementById("svc").value;
+    var sizeSel=document.getElementById("size");
+    var lbl=document.getElementById("size-label");
+    sizeSel.innerHTML="";
+    document.getElementById("est-out").classList.remove("show");
+    if(!s){sizeSel.innerHTML='<option value="">Choose a service first…</option>';lbl.textContent="Size";return}
+    lbl.textContent=services[s].sizeLabel;
+    var opts='<option value="">Choose one…</option>';
+    services[s].sizes.forEach(function(o,i){opts+='<option value="'+i+'">'+o.label+'</option>'});
+    sizeSel.innerHTML=opts;
+  }
+  function estimate(){
+    var s=document.getElementById("svc").value, z=document.getElementById("size").value;
+    var out=document.getElementById("est-out");
+    var unitEl=document.getElementById("est-unit");
+    if(!s||z===""){out.classList.add("show");document.getElementById("est-range").textContent="Pick both options ↑";document.getElementById("est-note").textContent="";unitEl.textContent="";return}
+    var svc=services[s], o=svc.sizes[+z], p=o.range;
+    document.getElementById("est-range").textContent=fmt(p[0])+" – "+fmt(p[1])+(svc.per?" "+svc.per:"");
+    if(svc.perM2){unitEl.textContent="≈ "+fmt(svc.perM2[0])+"–"+fmt(svc.perM2[1])+" per m², all-in";}
+    else if(o.area){var m1=Math.round(p[0]/o.area[1]), m2=Math.round(p[1]/o.area[0]);unitEl.textContent="≈ "+fmt(m1)+"–"+fmt(m2)+" per m²";}
+    else {unitEl.textContent="";}
+    document.getElementById("est-note").textContent=svc.note+" Exact price confirmed in your free 24h quote.";
+    out.classList.add("show");
+  }
+  function sendForm(){document.getElementById("form-msg").classList.add("show")}
+
+  (function(){
+    var v=document.getElementById("sr-video");
+    fetch("https://files.catbox.moe/svp1uj.mp4").then(function(r){return r.blob()}).then(function(b){
+      v.src=URL.createObjectURL(b);
+      v.play().catch(function(){});
+    });
+  })();
+</script>
+</body>
+</html>
