@@ -502,7 +502,7 @@
 
   (function(){
     var v=document.getElementById("sr-video");
-    fetch("https://files.catbox.moe/svp1uj.mp4").then(function(r){return r.blob()}).then(function(b){
+    fetch("simply-resin-video-web.mp4").then(function(r){return r.blob()}).then(function(b){
       v.src=URL.createObjectURL(b);
       v.play().catch(function(){});
     });
