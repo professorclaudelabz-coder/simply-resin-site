@@ -49,12 +49,38 @@
   .nav-cta{background:linear-gradient(120deg,#a8842f,#d9b358 50%,#a8842f);color:#17120a !important;padding:10px 20px;border-radius:999px;opacity:1 !important}
   .nav-phone{font-weight:700;color:var(--gold-light) !important}
   @media (max-width:860px){.nav-links li:not(.keep){display:none}}
-  .hero{position:relative;overflow:hidden;padding:110px 0 120px;background:
-    radial-gradient(900px 480px at 82% -8%, rgba(201,162,75,.16), transparent 60%),
-    radial-gradient(700px 420px at -8% 108%, rgba(201,162,75,.10), transparent 55%),
-    linear-gradient(165deg,rgba(10,10,12,.93) 0%,rgba(18,18,21,.94) 60%,rgba(23,21,15,.96) 100%),
-    url('https://d8j0ntlcm91z4.cloudfront.net/user_3GPt5hWCzN7NGc061uSMrjL0r7q/hf_20260723_164002_fdc9f485-630a-4f5c-999c-dda601d5c81a_min.webp') center 55%/cover no-repeat #0a0a0c}
-  .hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:56px;align-items:center;position:relative}
+  @media (max-width:640px){
+    .wrap{padding:0 18px}
+    .nav{height:auto;min-height:62px;padding:10px 0;gap:10px}
+    .logo{gap:9px}
+    .logo .mono{font-size:1.45rem}
+    .logo .name .l1{font-size:.8rem;letter-spacing:.04em}
+    .logo .name .l2{font-size:.48rem;letter-spacing:.22em}
+    .nav-links{gap:9px}
+    .nav-phone{font-size:.78rem;white-space:nowrap}
+    .nav-cta{padding:8px 13px;font-size:.78rem;white-space:nowrap}
+    section{padding:54px 0}
+    .hero{padding:56px 0 64px !important}
+    .hero h1{font-size:2.05rem;margin-bottom:16px}
+    .hero p.lead{font-size:1rem;margin-bottom:24px}
+    .hero .tagline{font-size:.72rem;letter-spacing:.26em;margin-bottom:12px}
+    .hero-trust{gap:12px;margin-top:28px;flex-direction:column;align-items:flex-start}
+    .btn{padding:13px 24px;font-size:.92rem}
+    .calc{padding:20px}
+    .services-head h2,.why h2,.video-grid h2,.contact h2{font-size:1.65rem}
+    .svc{padding:22px}
+    .why-card{padding:20px}
+    .contact-form{padding:22px}
+    .strip .wrap{flex-direction:column;gap:10px}
+    .video-grid{gap:36px}
+    .pf .ph{height:200px}
+  }
+  .hero{position:relative;overflow:hidden;padding:110px 0 120px;background:#0a0a0c}
+  .hero-vid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+  .hero-shade{position:absolute;inset:0;z-index:1;background:
+    radial-gradient(900px 480px at 82% -8%, rgba(201,162,75,.14), transparent 60%),
+    linear-gradient(165deg,rgba(10,10,12,.86) 0%,rgba(18,18,21,.88) 55%,rgba(23,21,15,.93) 100%)}
+  .hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:56px;align-items:center;position:relative;z-index:2}
   .hero .tagline{font-size:.85rem;letter-spacing:.34em;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
   .hero h1{font-size:clamp(2.4rem,4.8vw,3.7rem);margin-bottom:22px}
   .hero p.lead{font-size:1.12rem;color:#cfc7b4;max-width:33rem;margin-bottom:34px}
@@ -149,12 +175,10 @@
   footer{background:#070708;color:#7d766a;padding:34px 0;font-size:.84rem;border-top:1px solid var(--line)}
   footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
   footer a{color:#b8ae97;text-decoration:none}
-  .swap-banner{background:#171307;border-bottom:1px solid var(--line);color:#cdb571;font-size:.84rem;padding:10px 0;text-align:center}
 </style>
 </head>
 <body>
 
-<div class="swap-banner"><b>Draft preview.</b> Real prices &amp; contact details are in — just reviews, the logo file and one photo slot left to drop in.</div>
 
 <header>
   <div class="wrap nav">
@@ -175,6 +199,8 @@
 </header>
 
 <section class="hero" id="top" style="padding-top:96px">
+  <video class="hero-vid" autoplay muted loop playsinline preload="metadata" poster="https://d8j0ntlcm91z4.cloudfront.net/user_3GPt5hWCzN7NGc061uSMrjL0r7q/hf_20260723_164002_fdc9f485-630a-4f5c-999c-dda601d5c81a_min.webp" src="simply-resin-video-web.mp4"></video>
+  <div class="hero-shade"></div>
   <div class="wrap hero-grid">
     <div>
       <div class="tagline">Your Style &nbsp;·&nbsp; Your Way</div>
